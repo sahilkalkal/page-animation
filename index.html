@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Page Animation</title>
+</head>
+<body>
+    <div class="up">
+        <h1>
+            First Page
+        </h1>
+
+    </div>
+    <div class="container" >
+        <div class="page">
+            <h1>Second Page</h1>
+        </div>
+        <div class="imgs">
+            <img class="imgArrow" onclick="moveUp()" src="up.png"></img>
+            <img class="imgArrow" onclick="moveBottom()" src="down.png"></img>
+            <img class="imgArrow" onclick="moveLeft()" src="left.png"></img>
+            <img class="imgArrow" onclick="moveRight()" src="right.png"></img>
+        </div>
+        <button onclick="reCcenter()" >Recenter</button>
+    </div>
+    
+    
+    
+    <script>
+        function reCcenter(){
+            location.reload();
+        }
+        function moveLeft(){
+            var p = document.getElementsByClassName("up")[0];
+            p.style.transition = "2s";
+            p.style.marginLeft ="-80%";
+           
+        }
+        function moveRight(){
+            var p = document.getElementsByClassName("up")[0];
+            p.style.transition = "2s";
+            p.style.marginLeft ="150%";
+           
+        }
+        function moveUp(){
+            var p = document.getElementsByClassName("up")[0];
+            p.style.transition = "2s";
+            p.style.marginTop ="-80%";
+           
+        }
+        function moveBottom(){
+            var p = document.getElementsByClassName("up")[0];
+            p.style.transition = "2s";
+            p.style.marginTop ="150%";
+           
+        }
+    </script>
+</body>
+</html>

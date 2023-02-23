@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 5cm;
+    height: 7cm;
+    row-gap: .3cm;
+    /* justify-content: center; */
+    align-items: center;
+}
+.page{
+    border: 1px solid black;
+    width: 5cm;
+    height: 5cm;
+    z-index: -1;
+    background-color: blueviolet;
+    color: whitesmoke;
+}
+.up{
+    border: 1px solid black;
+    width: 5cm;
+    height: 5cm;
+    z-index: 1000;
+    position: fixed;
+    background-color: blanchedalmond;
+}
+.imgs{
+    display: flex;
+
+    
+    column-gap: .4cm;
+   
+}
+.imgArrow{
+    width: .5cm;
+    height: .5cm;
+    cursor: pointer;
+}
